@@ -1,3 +1,4 @@
+//ALBERTO PARLA ORTIZ
 package PaqC01;
 
 import javax.swing.*;
@@ -34,6 +35,7 @@ public class miPanel extends JFrame{
     private JPanel MiPanel2;
     private JTextField txtpais;
     private JTextField txtidpais;
+    private JButton btnPeso;
 
     public miPanel(){
         setTitle("Trabajo");
@@ -41,6 +43,7 @@ public class miPanel extends JFrame{
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
         setContentPane(MiPanel);
+
         Hub h=new Hub();
 
 
@@ -138,6 +141,13 @@ public class miPanel extends JFrame{
                 }
             }
 
+        });
+        btnPeso.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new miPanel2();
+
+            }
         });
     }
 
